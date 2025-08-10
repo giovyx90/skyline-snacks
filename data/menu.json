@@ -1,0 +1,82 @@
+{
+  "sections": [
+    {
+      "title": "Burgers",
+      "items": [
+        {
+          "name": "Neon Burger",
+          "desc": "Manzo, cheddar neon, cipolla caramellata, salsa skyline.",
+          "price": 8.5,
+          "tag": "Signature"
+        },
+        {
+          "name": "Harbor Fish Burger",
+          "desc": "Filetto croccante, lattuga, lime mayo.",
+          "price": 8.0
+        },
+        {
+          "name": "SkyPark Veggie",
+          "desc": "Burger vegetale, avocado, pomodoro, crema alle erbe.",
+          "price": 7.8,
+          "tag": "Veg"
+        }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        {
+          "name": "Urban Fries",
+          "desc": "Patatine croccanti con sale alla paprika.",
+          "price": 3.2
+        },
+        {
+          "name": "Neon Rings",
+          "desc": "Anelli di cipolla in pastella leggera.",
+          "price": 3.8
+        },
+        {
+          "name": "Street Slaw",
+          "desc": "Coleslaw fresco e croccante.",
+          "price": 3.5
+        }
+      ]
+    },
+    {
+      "title": "Drinks",
+      "items": [
+        {
+          "name": "Citrus Spark",
+          "desc": "Bibita frizzante agrumata.",
+          "price": 2.8
+        },
+        {
+          "name": "Midnight Cola",
+          "desc": "Classica con twist al lime.",
+          "price": 2.5
+        },
+        {
+          "name": "Harbor Iced Tea",
+          "desc": "Tè freddo alla pesca.",
+          "price": 2.7
+        }
+      ]
+    },
+    {
+      "title": "Combos",
+      "items": [
+        {
+          "name": "Downtown Combo",
+          "desc": "Neon Burger + Urban Fries + Drink.",
+          "price": 12.9,
+          "tag": "Best Value"
+        },
+        {
+          "name": "Uptown Light",
+          "desc": "SkyPark Veggie + Street Slaw + Water.",
+          "price": 11.5
+        }
+      ]
+    }
+  ]
+}
