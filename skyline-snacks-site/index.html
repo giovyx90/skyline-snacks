@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B1E3D" />
+  <meta name="description" content="Skyline Snacks — Il gusto più alto della città. Fast-food metropolitano ispirato alla skyline notturna di MetroCity." />
+  <meta property="og:title" content="Skyline Snacks · MetroCity" />
+  <meta property="og:description" content="Il gusto più alto della città. Fast-food metropolitano con atmosfera urban, luci al neon e sapori memorabili." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <title>Skyline Snacks · Il gusto più alto della città</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principale">
+      <a href="#" class="brand" aria-label="Skyline Snacks Home">
+        <img src="assets/logo.svg" alt="Logo Skyline Snacks" width="36" height="36" />
+        <span>Skyline <strong>Snacks</strong></span>
+      </a>
+
+      <button class="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="menu" class="menu">
+        <li><a href="#about">Brand</a></li>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#locations">Punti Vendita</a></li>
+        <li><a href="#careers">Lavora con noi</a></li>
+        <li><a href="#contact" class="cta">Ordina Ora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Il gusto più alto della città</h1>
+          <p class="lead">Fast‑food metropolitano. Velocità, qualità e un'esperienza visiva ispirata alle luci della skyline notturna.</p>
+          <div class="hero-actions">
+            <a href="#menu-section" class="btn btn-primary">Scopri il Menu</a>
+            <a href="#about" class="btn btn-ghost">Brand Identity</a>
+          </div>
+          <ul class="badges" aria-label="Valori del brand">
+            <li>⚡ Velocità</li>
+            <li>⭐ Qualità</li>
+            <li>🌆 Esperienza Visiva</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/logo.svg" alt="" class="logo-glow" />
+          <div class="cityline"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Brand Identity -->
+    <section id="about" class="section container">
+      <div class="grid-2">
+        <div>
+          <h2>Brand Identity</h2>
+          <p><strong>Nome:</strong> Skyline Snacks</p>
+          <p><strong>Slogan:</strong> “Il gusto più alto della città”</p>
+          <p><strong>Concept:</strong> Fast‑food metropolitano ispirato alle luci della skyline notturna. Urban moderno, rapido e invitante.</p>
+          <p><strong>Valori:</strong> Velocità, qualità, esperienza visiva.</p>
+          <details class="palette">
+            <summary>Tavolozza colori</summary>
+            <ul class="swatches">
+              <li><span class="swatch c1"></span>#0B1E3D · Blu notte</li>
+              <li><span class="swatch c2"></span>#FFD43B · Giallo neon</li>
+              <li><span class="swatch c3"></span>#FF7B39 · Arancio urbano</li>
+              <li><span class="swatch c4"></span>#FFFFFF · Bianco puro</li>
+              <li><span class="swatch c5"></span>#7A7A7A · Grigio cemento</li>
+            </ul>
+          </details>
+        </div>
+        <div class="about-card">
+          <h3>Logo & Mood</h3>
+          <p>Logo con <em>skyline</em> stilizzata e luna a mezzaluna che richiama un hamburger. Tipografia forte in giallo neon su blu notte. Atmosfera calda con dettagli LED e panoramici.</p>
+          <img src="assets/logo.svg" alt="Logo Skyline Snacks" class="about-logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu-section" class="section container">
+      <header class="section-header">
+        <h2>Menu</h2>
+        <p class="muted">Sapori iconici con un tocco urban. Tutto pronto alla velocità della città.</p>
+      </header>
+      <div id="menu-grid" class="menu-grid" aria-live="polite">
+        <!-- JS will render cards from data/menu.json -->
+      </div>
+      <div class="section-actions">
+        <a href="#contact" class="btn btn-primary">Ordina per il ritiro</a>
+        <button id="toggle-combos" class="btn btn-ghost">Mostra/Nascondi Combos</button>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section id="locations" class="section container">
+      <header class="section-header">
+        <h2>Punti Vendita</h2>
+        <p class="muted">Stiamo aprendo in tutta MetroCity. Vuoi portare Skyline Snacks nel tuo quartiere RP?</p>
+      </header>
+      <div class="locations">
+        <article class="card">
+          <h3>Downtown — Neon Corner</h3>
+          <p>Drive‑thru, late‑night, pick‑up veloce.</p>
+        </article>
+        <article class="card">
+          <h3>Harbor District — Pier 7</h3>
+          <p>Vista skyline, terrazza, eventi week‑end.</p>
+        </article>
+        <article class="card">
+          <h3>Uptown — SkyPark</h3>
+          <p>Kiosk smart, ordini da app, ritiro lampo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="section container">
+      <header class="section-header">
+        <h2>Lavora con noi</h2>
+        <p class="muted">Team rapido, preciso, sorridente. Cresci con noi nel cuore di MetroCity.</p>
+      </header>
+      <div class="careers">
+        <article class="card">
+          <h3>Runner Notturno</h3>
+          <p>Consegne tra i distretti RP. Richiesto spirito urban e puntualità.</p>
+        </article>
+        <article class="card">
+          <h3>Line Cook</h3>
+          <p>Qualità e velocità sulla piastra. Formazione interna inclusa.</p>
+        </article>
+        <article class="card">
+          <h3>Store Lead</h3>
+          <p>Gestione turni e servizio. Leadership sul campo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="section container">
+      <header class="section-header">
+        <h2>Contatti & Ordini</h2>
+        <p class="muted">Prenota per il ritiro o proponi una nuova location RP.</p>
+      </header>
+      <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('Grazie! Ti contatteremo presto.');">
+        <div class="grid-2">
+          <label>
+            <span>Nome</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+        </div>
+        <label>
+          <span>Richiesta</span>
+          <textarea name="message" rows="4" placeholder="Ordine, partnership, evento…"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Invia</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="brand small">
+        <img src="assets/logo.svg" alt="Logo Skyline Snacks" width="28" height="28" />
+        <span>Skyline <strong>Snacks</strong></span>
+      </a>
+      <p class="muted">© <span id="year"></span> Skyline Snacks · MetroCity RP</p>
+      <ul class="footer-links">
+        <li><a href="#about">Brand</a></li>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#locations">Punti Vendita</a></li>
+        <li><a href="#careers">Lavora con noi</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
